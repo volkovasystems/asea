@@ -86,9 +86,9 @@ harden( "client", (
 harden( "server", (
 	typeof module != "undefined" &&
 	typeof global != "undefined" &&
-	module.exports &&
-	global.process &&
-	global.process.env
+	!!module.exports &&
+	!!global.process &&
+	!!global.process.env
 ), asea );
 
 if( asea.server ){
