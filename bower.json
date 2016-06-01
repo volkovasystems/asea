@@ -1,0 +1,26 @@
+{
+  "name": "asea",
+  "description": "Determines if you're on a server or a client",
+  "main": "asea.js",
+  "authors": [
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "server",
+    "client",
+    "environment",
+    "platform"
+  ],
+  "homepage": "https://github.com/volkovasystems/asea",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "harden": "^0.3.0"
+  }
+}

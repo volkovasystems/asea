@@ -1,0 +1,28 @@
+{
+  "name": "asea",
+  "version": "0.0.0",
+  "description": "Determines if you're on a server or a client",
+  "main": "asea.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volkovasystems/asea.git"
+  },
+  "keywords": [
+    "server",
+    "client",
+    "environment",
+    "platform"
+  ],
+  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/volkovasystems/asea/issues"
+  },
+  "homepage": "https://github.com/volkovasystems/asea#readme",
+  "dependencies": {
+    "harden": "^0.3.0"
+  }
+}
