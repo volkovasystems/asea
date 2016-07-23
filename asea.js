@@ -1,6 +1,6 @@
 "use strict";
 
-/*:
+/*;
 	@module-license:
 		The MIT License (MIT)
 		@mit-license
@@ -78,7 +78,7 @@ harden( "client", (
 	typeof window != "undefined" &&
 	typeof document != "undefined" &&
 	typeof window.constructor == "function" &&
-	typeof document.construct == "function" &&
+	typeof document.constructor == "function" &&
 	window.constructor.name == "Window" &&
 	document.constructor.name == "HTMLDocument"
 ), asea );
