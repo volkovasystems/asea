@@ -1,6 +1,6 @@
 {
   "name": "asea",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Determines if you're on a server or a client",
   "main": "asea.js",
   "authors": [

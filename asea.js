@@ -43,6 +43,8 @@
 
 	@module-documentation:
 		Determines if you're on a server environment or a client environment.
+
+		Returns unknown if the environment cannot be determined.
 	@end-module-documentation
 
 	@include:
@@ -64,6 +66,7 @@ if( typeof window != "undefined" &&
 
 harden( "CLIENT", "client" );
 harden( "SERVER", "server" );
+harden( "UNKNOWN", "unknown" );
 
 var asea = function asea( ){
 	if( asea.client ){
@@ -71,25 +74,33 @@ var asea = function asea( ){
 
 	}else if( asea.server ){
 		return SERVER;
+
+	}else{
+		return UNKNOWN;
 	}
 };
 
-harden( "client", (
-	typeof window != "undefined" &&
+harden( "client",
+	( typeof window != "undefined" &&
 	typeof document != "undefined" &&
 	typeof window.constructor == "function" &&
 	typeof document.constructor == "function" &&
 	window.constructor.name == "Window" &&
-	document.constructor.name == "HTMLDocument"
-), asea );
+	document.constructor.name == "HTMLDocument" ),
+	asea );
 
-harden( "server", (
-	typeof module != "undefined" &&
+harden( "server",
+	( typeof module != "undefined" &&
 	typeof global != "undefined" &&
 	!!module.exports &&
 	!!global.process &&
-	!!global.process.env
-), asea );
+	!!global.process.env ),
+	asea );
+
+harden( "unknown",
+	( asea.client === false &&
+	asea.server === false ),
+	asea );
 
 if( asea.server ){
 	module.exports = asea;
