@@ -54,7 +54,7 @@
 	@end-include
 */
 
-if( typeof window == "undefined" ){
+if( typeof require == "function" ){
 	var harden = require( "harden" );
 }
 
@@ -68,7 +68,7 @@ harden( "CLIENT", "client" );
 harden( "SERVER", "server" );
 harden( "UNKNOWN", "unknown" );
 
-var asea = function asea( ){
+this.asea = function asea( ){
 	if( asea.client ){
 		return CLIENT;
 
@@ -87,7 +87,7 @@ harden( "client",
 	typeof document.constructor == "function" &&
 	window.constructor.name == "Window" &&
 	document.constructor.name == "HTMLDocument" ),
-	asea );
+	this.asea );
 
 harden( "server",
 	( typeof module != "undefined" &&
@@ -95,13 +95,15 @@ harden( "server",
 	!!module.exports &&
 	!!global.process &&
 	!!global.process.env ),
-	asea );
+	this.asea );
 
 harden( "unknown",
-	( asea.client === false &&
-	asea.server === false ),
-	asea );
+	( this.asea.client === false &&
+	this.asea.server === false ),
+	this.asea );
 
-if( asea.server ){
-	module.exports = asea;
+if( typeof module != "undefined" &&
+	typeof module.exports != "undefined" )
+{
+	module.exports = this.asea;
 }
