@@ -58,9 +58,7 @@ if( typeof require == "function" ){
 	var harden = require( "harden" );
 }
 
-if( typeof window != "undefined" &&
-	!( "harden" in window ) )
-{
+if( typeof window != "undefined" && !( "harden" in window ) ){
 	throw new Error( "harden is not defined" );
 }
 
@@ -68,7 +66,7 @@ harden( "CLIENT", "client" );
 harden( "SERVER", "server" );
 harden( "UNKNOWN", "unknown" );
 
-this.asea = function asea( ){
+var asea = function asea( ){
 	if( asea.client ){
 		return CLIENT;
 
@@ -87,7 +85,7 @@ harden( "client",
 	typeof document.constructor == "function" &&
 	window.constructor.name == "Window" &&
 	document.constructor.name == "HTMLDocument" ),
-	this.asea );
+	asea );
 
 harden( "server",
 	( typeof module != "undefined" &&
@@ -95,15 +93,13 @@ harden( "server",
 	!!module.exports &&
 	!!global.process &&
 	!!global.process.env ),
-	this.asea );
+	asea );
 
 harden( "unknown",
-	( this.asea.client === false &&
-	this.asea.server === false ),
-	this.asea );
+	( asea.client === false &&
+	asea.server === false ),
+	asea );
 
-if( typeof module != "undefined" &&
-	typeof module.exports != "undefined" )
-{
-	module.exports = this.asea;
+if( typeof module != "undefined" && typeof module.exports != "undefined" ){
+	module.exports = asea;
 }
