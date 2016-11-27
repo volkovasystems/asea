@@ -54,19 +54,13 @@
 	@end-include
 */
 
-if( typeof require == "function" ){
-	var harden = require( "harden" );
-}
-
-if( typeof window != "undefined" && !( "harden" in window ) ){
-	throw new Error( "harden is not defined" );
-}
+const harden = require( "harden" );
 
 harden( "CLIENT", "client" );
 harden( "SERVER", "server" );
 harden( "UNKNOWN", "unknown" );
 
-var asea = function asea( ){
+const asea = function asea( ){
 	if( asea.client ){
 		return CLIENT;
 
@@ -100,6 +94,4 @@ harden( "unknown",
 	asea.server === false ),
 	asea );
 
-if( typeof module != "undefined" && typeof module.exports != "undefined" ){
-	module.exports = asea;
-}
+module.exports = asea;
