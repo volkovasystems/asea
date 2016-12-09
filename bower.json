@@ -1,10 +1,11 @@
 {
   "name": "asea",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Determines if you're on a server or a client",
   "main": "asea.js",
   "authors": [
-    "Richeve S. Bebedor <richeve.bebedor@gmail.com>"
+    "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
   ],
   "license": "MIT",
   "keywords": [
@@ -22,6 +23,6 @@
     "tests"
   ],
   "dependencies": {
-    "harden": "^0.7.0"
+    "harden": "^0.9.0"
   }
 }
