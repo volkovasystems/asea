@@ -1,10 +1,13 @@
 {
   "name": "asea",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Determines if you're on a server or a client",
   "main": "asea.js",
+  "support": "asea.support.js",
+  "deploy": "asea.deploy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel asea.js -o asea.support.js && webpack",
+    "test": "mocha asea-test.js"
   },
   "repository": {
     "type": "git",
@@ -17,12 +20,24 @@
     "platform"
   ],
   "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+  "contributors": [
+    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/volkovasystems/asea/issues"
   },
   "homepage": "https://github.com/volkovasystems/asea#readme",
   "dependencies": {
-    "harden": "^0.7.0"
+    "babel-runtime": "^6.20.0",
+    "harden": "^0.12.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-latest": "^6.16.0",
+    "webpack": "^1.14.0"
   }
 }
