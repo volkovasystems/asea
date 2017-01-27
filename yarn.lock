@@ -575,7 +575,7 @@ babel-register@^6.22.0:
     mkdirp "^0.5.1"
     source-map-support "^0.4.2"
 
-babel-runtime@^6.18.0, babel-runtime@^6.20.0, babel-runtime@^6.22.0:
+babel-runtime@^6.18.0, babel-runtime@^6.22.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-runtime/-/babel-runtime-6.22.0.tgz#1cf8b4ac67c77a4ddb0db2ae1f74de52ac4ca611"
   dependencies:
@@ -1062,11 +1062,11 @@ har-validator@~2.0.6:
     is-my-json-valid "^2.12.4"
     pinkie-promise "^2.0.0"
 
-harden@^0.13.0:
-  version "0.13.0"
-  resolved "https://registry.yarnpkg.com/harden/-/harden-0.13.0.tgz#179120a4782cb29e24ab3fd4ffc93616e4fd6912"
+harden@^0.14.0:
+  version "0.14.0"
+  resolved "https://registry.yarnpkg.com/harden/-/harden-0.14.0.tgz#bd9b003c413a80523f60fc0becd2b6e4bd0e3b96"
   dependencies:
-    babel-runtime "^6.20.0"
+    babel-runtime "^6.22.0"
 
 has-ansi@^2.0.0:
   version "2.0.0"
