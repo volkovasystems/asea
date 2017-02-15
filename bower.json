@@ -1,6 +1,6 @@
 {
   "name": "asea",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Determines if you're on a server or a client",
   "main": "asea.deploy.js",
   "support": "asea.support.js",
@@ -24,6 +24,6 @@
     "tests"
   ],
   "dependencies": {
-    "harden": "^0.15.0"
+    "harden": "^0.16.0"
   }
 }

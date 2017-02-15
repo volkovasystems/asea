@@ -1,13 +1,13 @@
 {
   "name": "asea",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "description": "Determines if you're on a server or a client",
   "main": "asea.js",
   "support": "asea.support.js",
   "deploy": "asea.deploy.js",
   "browser": "asea.deploy.js",
   "scripts": {
-    "build": "babel asea.js -o asea.support.js && webpack --progress",
+    "build": "babel asea.js --out-file asea.support.js --source-maps && webpack --progress",
     "test": "mocha asea-test.js"
   },
   "repository": {
@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/volkovasystems/asea#readme",
   "dependencies": {
-    "babel-runtime": "^6.22.0",
-    "harden": "^0.15.0"
+    "babel-runtime": "^6.23.0",
+    "harden": "^0.16.0"
   },
   "devDependencies": {
     "babel-cli": "^6.23.0",
