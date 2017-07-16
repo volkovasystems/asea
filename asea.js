@@ -59,9 +59,9 @@
 
 const harden = require( "harden" );
 
-harden( "CLIENT", "client" );
-harden( "SERVER", "server" );
-harden( "UNSUPPORTED", "unsupported" );
+harden( "CLIENT", Symbol( "client" ) );
+harden( "SERVER", Symbol( "server" ) );
+harden( "UNSUPPORTED", Symbol( "unsupported" ) );
 
 const asea = function asea( ){
 	if( asea.CLIENT ){
@@ -75,26 +75,26 @@ const asea = function asea( ){
 	}
 };
 
-harden( "CLIENT",
-	( typeof window != "undefined" &&
+harden( "CLIENT", (
+	typeof window != "undefined" &&
 	typeof document != "undefined" &&
 	typeof window.constructor == "function" &&
 	typeof document.constructor == "function" &&
 	window.constructor.name == "Window" &&
-	document.constructor.name == "HTMLDocument" ),
-	asea );
+	document.constructor.name == "HTMLDocument"
+), asea );
 
-harden( "SERVER",
-	( typeof module != "undefined" &&
+harden( "SERVER", (
+	typeof module != "undefined" &&
 	typeof global != "undefined" &&
 	!!module.exports &&
 	!!global.process &&
-	!!global.process.env ),
-	asea );
+	!!global.process.env
+), asea );
 
-harden( "UNSUPPORTED",
-	( asea.client === false &&
-	asea.server === false ),
-	asea );
+harden( "UNSUPPORTED", (
+	asea.CLIENT === false &&
+	asea.SERVER === false
+), asea );
 
 module.exports = asea;
