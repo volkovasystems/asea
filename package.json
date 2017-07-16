@@ -1,44 +1,44 @@
 {
-  "name": "asea",
-  "version": "0.14.0",
-  "description": "Determines if you're on a server or a client",
-  "main": "asea.js",
-  "support": "asea.support.js",
-  "deploy": "asea.deploy.js",
-  "browser": "asea.deploy.js",
-  "scripts": {
-    "build": "babel asea.js --out-file asea.support.js --source-maps && webpack --progress --display-modules",
-    "test": "mocha asea-test.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/volkovasystems/asea.git"
-  },
-  "keywords": [
-    "server",
-    "client",
-    "environment",
-    "platform"
-  ],
-  "author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-  "contributors": [
-    "John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/volkovasystems/asea/issues"
-  },
-  "homepage": "https://github.com/volkovasystems/asea#readme",
-  "dependencies": {
-    "babel-runtime": "^6.23.0",
-    "harden": "^0.22.0"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.24.1",
-    "babel-core": "^6.24.1",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-latest": "^6.24.1",
-    "source-map-loader": "^0.2.1",
-    "webpack": "^2.6.1"
-  }
+	"name": "asea",
+	"version": "0.15.0",
+	"description": "Determines if you're on a server or a client",
+	"main": "asea.js",
+	"support": "asea.support.js",
+	"deploy": "asea.deploy.js",
+	"browser": "asea.deploy.js",
+	"scripts": {
+		"build": "babel asea.js --out-file asea.support.js --source-maps && webpack --progress --display-modules",
+		"test": "mocha asea-test.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/volkovasystems/asea.git"
+	},
+	"keywords": [
+		"server",
+		"client",
+		"environment",
+		"platform"
+	],
+	"author": "Richeve S. Bebedor <richeve.bebedor@gmail.com>",
+	"contributors": [
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+	],
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/volkovasystems/asea/issues"
+	},
+	"homepage": "https://github.com/volkovasystems/asea#readme",
+	"dependencies": {
+		"babel-runtime": "^6.23.0",
+		"harden": "^0.22.0"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.24.1",
+		"babel-core": "^6.25.0",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-latest": "^6.24.1",
+		"source-map-loader": "^0.2.1",
+		"webpack": "^3.3.0"
+	}
 }

@@ -47,7 +47,7 @@
 	@module-documentation:
 		Determines if you're on a server environment or a client environment.
 
-		Returns unknown if the environment cannot be determined.
+		Returns unsupported if the environment cannot be determined.
 	@end-module-documentation
 
 	@include:
@@ -59,42 +59,42 @@
 
 const harden = require( "harden" );
 
-harden( "CLIENT", "client" );
-harden( "SERVER", "server" );
-harden( "UNKNOWN", "unknown" );
+harden( "CLIENT", Symbol( "client" ) );
+harden( "SERVER", Symbol( "server" ) );
+harden( "UNSUPPORTED", Symbol( "unsupported" ) );
 
 const asea = function asea( ){
-	if( asea.client ){
+	if( asea.CLIENT ){
 		return CLIENT;
 
-	}else if( asea.server ){
+	}else if( asea.SERVER ){
 		return SERVER;
 
 	}else{
-		return UNKNOWN;
+		return UNSUPPORTED;
 	}
 };
 
-harden( "client",
-	( typeof window != "undefined" &&
+harden( "CLIENT", (
+	typeof window != "undefined" &&
 	typeof document != "undefined" &&
 	typeof window.constructor == "function" &&
 	typeof document.constructor == "function" &&
 	window.constructor.name == "Window" &&
-	document.constructor.name == "HTMLDocument" ),
-	asea );
+	document.constructor.name == "HTMLDocument"
+), asea );
 
-harden( "server",
-	( typeof module != "undefined" &&
+harden( "SERVER", (
+	typeof module != "undefined" &&
 	typeof global != "undefined" &&
 	!!module.exports &&
 	!!global.process &&
-	!!global.process.env ),
-	asea );
+	!!global.process.env
+), asea );
 
-harden( "unknown",
-	( asea.client === false &&
-	asea.server === false ),
-	asea );
+harden( "UNSUPPORTED", (
+	asea.CLIENT === false &&
+	asea.SERVER === false
+), asea );
 
 module.exports = asea;

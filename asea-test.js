@@ -1,6 +1,6 @@
 const assert = require( "assert" );
 const asea = require( "./asea.js" );
 
-assert.equal( asea( ), "server", "should have value 'server'" );
+assert.equal( asea( ).toString( ), "Symbol(server)", "should return 'Symbol(server)'" );
 
 console.log( "ok" );

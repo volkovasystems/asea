@@ -47,7 +47,7 @@
               	@module-documentation:
               		Determines if you're on a server environment or a client environment.
               
-              		Returns unknown if the environment cannot be determined.
+              		Returns unsupported if the environment cannot be determined.
               	@end-module-documentation
               
               	@include:
@@ -55,27 +55,27 @@
               			"harden": "harden"
               		}
               	@end-include
-              */
+              */var _symbol = require("babel-runtime/core-js/symbol");var _symbol2 = _interopRequireDefault(_symbol);function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}
 
 var harden = require("harden");
 
-harden("CLIENT", "client");
-harden("SERVER", "server");
-harden("UNKNOWN", "unknown");
+harden("CLIENT", (0, _symbol2.default)("client"));
+harden("SERVER", (0, _symbol2.default)("server"));
+harden("UNSUPPORTED", (0, _symbol2.default)("unsupported"));
 
 var asea = function asea() {
-	if (asea.client) {
+	if (asea.CLIENT) {
 		return CLIENT;
 
-	} else if (asea.server) {
+	} else if (asea.SERVER) {
 		return SERVER;
 
 	} else {
-		return UNKNOWN;
+		return UNSUPPORTED;
 	}
 };
 
-harden("client",
+harden("CLIENT",
 typeof window != "undefined" &&
 typeof document != "undefined" &&
 typeof window.constructor == "function" &&
@@ -84,7 +84,7 @@ window.constructor.name == "Window" &&
 document.constructor.name == "HTMLDocument",
 asea);
 
-harden("server",
+harden("SERVER",
 typeof module != "undefined" &&
 typeof global != "undefined" &&
 !!module.exports &&
@@ -92,9 +92,9 @@ typeof global != "undefined" &&
 !!global.process.env,
 asea);
 
-harden("unknown",
-asea.client === false &&
-asea.server === false,
+harden("UNSUPPORTED",
+asea.CLIENT === false &&
+asea.SERVER === false,
 asea);
 
 module.exports = asea;
