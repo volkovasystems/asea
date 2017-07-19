@@ -1,12 +1,13 @@
 {
 	"name": "asea",
-	"version": "0.15.0",
+	"version": "0.16.0",
 	"description": "Determines if you're on a server or a client",
 	"main": "asea.deploy.js",
 	"support": "asea.support.js",
 	"authors": [
 		"Richeve S. Bebedor <richeve.bebedor@gmail.com>",
-		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>"
+		"John Lenon Maghanoy <johnlenonmaghanoy@gmail.com>",
+		"Vinse Vinalon <vinsevinalon@gmail.com>"
 	],
 	"license": "MIT",
 	"keywords": [
@@ -24,6 +25,6 @@
 		"tests"
 	],
 	"dependencies": {
-		"harden": "^0.22.0"
+		"harden": "^0.23.0"
 	}
 }
