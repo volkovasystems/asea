@@ -75,6 +75,8 @@ const path = require( "path" );
 
 describe( "asea", ( ) => {
 
+
+	//: @server:
 	describe( "`asea( ).toString( )`", ( ) => {
 
 		it( "should return 'Symbol(server)'", ( ) => {
@@ -84,6 +86,20 @@ describe( "asea", ( ) => {
 		} );
 
 	} );
+	//: @end-server
+
+
+	//: @client:
+	describe( "`asea( ).toString( )`", ( ) => {
+
+		it( "should return 'Symbol(client)'", ( ) => {
+
+			assert.equal( asea( ).toString( ), "Symbol(client)" );
+
+		} );
+
+	} );
+	//: @end-client
 
 } );
 
