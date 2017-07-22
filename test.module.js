@@ -70,13 +70,10 @@ const path = require( "path" );
 //: @end-bridge
 
 
-//: @!bridge:
-
-
+//: @server:
 describe( "asea", ( ) => {
 
 
-	//: @server:
 	describe( "`asea( ).toString( )`", ( ) => {
 
 		it( "should return 'Symbol(server)'", ( ) => {
@@ -86,10 +83,16 @@ describe( "asea", ( ) => {
 		} );
 
 	} );
-	//: @end-server
 
 
-	//: @client:
+} );
+//: @end-server
+
+
+//: @client:
+describe( "asea", ( ) => {
+
+
 	describe( "`asea( ).toString( )`", ( ) => {
 
 		it( "should return 'Symbol(client)'", ( ) => {
@@ -99,12 +102,10 @@ describe( "asea", ( ) => {
 		} );
 
 	} );
-	//: @end-client
+
 
 } );
-
-
-//: @end-bridge
+//: @end-client
 
 
 //: @bridge:
