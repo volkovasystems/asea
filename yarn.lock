@@ -1115,14 +1115,7 @@ create-hmac@^1.1.0, create-hmac@^1.1.2, create-hmac@^1.1.4:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-cross-spawn@^4.0.0:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-4.0.2.tgz#7b9247621c23adfdd3856004a823cbe397424d41"
-  dependencies:
-    lru-cache "^4.0.1"
-    which "^1.2.9"
-
-cross-spawn@^5.1.0:
+cross-spawn@^5.0.1, cross-spawn@^5.1.0:
   version "5.1.0"
   resolved "https://registry.yarnpkg.com/cross-spawn/-/cross-spawn-5.1.0.tgz#e8bd0efee58fcff6f8f94510a0a554bbfa235449"
   dependencies:
@@ -1492,12 +1485,12 @@ evp_bytestokey@^1.0.0:
   dependencies:
     create-hash "^1.1.1"
 
-execa@^0.5.0:
-  version "0.5.1"
-  resolved "https://registry.yarnpkg.com/execa/-/execa-0.5.1.tgz#de3fb85cb8d6e91c85bcbceb164581785cb57b36"
+execa@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/execa/-/execa-0.7.0.tgz#944becd34cc41ee32a63a9faf27ad5a65fc59777"
   dependencies:
-    cross-spawn "^4.0.0"
-    get-stream "^2.2.0"
+    cross-spawn "^5.0.1"
+    get-stream "^3.0.0"
     is-stream "^1.1.0"
     npm-run-path "^2.0.0"
     p-finally "^1.0.0"
@@ -1773,12 +1766,9 @@ get-stdin@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-4.0.1.tgz#b968c6b0a04384324902e8bf1a5df32579a450fe"
 
-get-stream@^2.2.0:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-2.3.1.tgz#5f38f93f346009666ee0150a054167f91bdd95de"
-  dependencies:
-    object-assign "^4.0.1"
-    pinkie-promise "^2.0.0"
+get-stream@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/get-stream/-/get-stream-3.0.0.tgz#8e943d1358dc37555054ecbe2edb05aa174ede14"
 
 getpass@^0.1.1:
   version "0.1.7"
@@ -2428,8 +2418,8 @@ jsesc@~0.5.0:
   resolved "https://registry.yarnpkg.com/jsesc/-/jsesc-0.5.0.tgz#e7dee66e35d6fc16f710fe91d5cf69f70f08911d"
 
 json-loader@^0.5.4:
-  version "0.5.4"
-  resolved "https://registry.yarnpkg.com/json-loader/-/json-loader-0.5.4.tgz#8baa1365a632f58a3c46d20175fc6002c96e37de"
+  version "0.5.6"
+  resolved "https://registry.yarnpkg.com/json-loader/-/json-loader-0.5.6.tgz#51697650c63f7d17e21561582117282e1e711db8"
 
 json-schema-traverse@^0.3.0:
   version "0.3.1"
@@ -3125,10 +3115,10 @@ os-locale@^1.4.0:
     lcid "^1.0.0"
 
 os-locale@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/os-locale/-/os-locale-2.0.0.tgz#15918ded510522b81ee7ae5a309d54f639fc39a4"
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/os-locale/-/os-locale-2.1.0.tgz#42bc2900a6b5b8bd17376c8e882b65afccf24bf2"
   dependencies:
-    execa "^0.5.0"
+    execa "^0.7.0"
     lcid "^1.0.0"
     mem "^1.1.0"
 
@@ -4004,8 +3994,8 @@ supports-color@^3.1.0, supports-color@~3.2.3:
     has-flag "^1.0.0"
 
 tapable@^0.2.5, tapable@~0.2.5:
-  version "0.2.6"
-  resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.6.tgz#206be8e188860b514425375e6f1ae89bfb01fd8d"
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.7.tgz#e46c0daacbb2b8a98b9b0cea0f4052105817ed5c"
 
 tar-pack@^3.4.0:
   version "3.4.0"

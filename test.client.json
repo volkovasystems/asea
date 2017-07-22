@@ -1,0 +1,84 @@
+{
+	"state": {
+		"passed": 1,
+		"failed": 0,
+		"skipped": 0
+	},
+	"start": "2017-07-22T13:22:18.368Z",
+	"end": "2017-07-22T13:22:51.043Z",
+	"capabilities": {
+		"browserName": "chrome",
+		"chromeOptions": {
+			"args": [
+				"disable-gpu",
+				"headless"
+			]
+		},
+		"proxy": null
+	},
+	"host": "127.0.0.1",
+	"port": 4444,
+	"baseUrl": "http://localhost",
+	"framework": "mocha",
+	"mochaOpts": {
+		"timeout": 10000,
+		"ui": "bdd"
+	},
+	"suites": [
+		{
+			"name": "asea",
+			"duration": 0,
+			"start": "2017-07-22T13:22:50.767Z",
+			"tests": [],
+			"hooks": []
+		},
+		{
+			"name": "asea",
+			"duration": 96,
+			"start": "2017-07-22T13:22:50.768Z",
+			"end": "2017-07-22T13:22:50.864Z",
+			"tests": [],
+			"hooks": [
+				{
+					"start": "2017-07-22T13:22:50.772Z",
+					"end": "2017-07-22T13:22:50.772Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "asea",
+					"associatedTest": "should return 'Symbol(client)'"
+				},
+				{
+					"start": "2017-07-22T13:22:50.855Z",
+					"end": "2017-07-22T13:22:50.855Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "asea",
+					"associatedTest": "should return 'Symbol(client)'"
+				},
+				{
+					"start": "2017-07-22T13:22:50.865Z",
+					"end": "2017-07-22T13:22:50.865Z",
+					"duration": 0,
+					"title": "\"after all\" hook",
+					"associatedSuite": "asea"
+				}
+			]
+		},
+		{
+			"name": "`asea( ).toString( )`",
+			"duration": 88,
+			"start": "2017-07-22T13:22:50.769Z",
+			"end": "2017-07-22T13:22:50.857Z",
+			"tests": [
+				{
+					"name": "should return 'Symbol(client)'",
+					"start": "2017-07-22T13:22:50.771Z",
+					"end": "2017-07-22T13:22:50.853Z",
+					"duration": 82,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		}
+	]
+}
