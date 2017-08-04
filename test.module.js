@@ -76,7 +76,7 @@ describe( "asea", ( ) => {
 
 	describe( "`asea( ).toString( )`", ( ) => {
 
-		it( "should return 'Symbol(server)'", ( ) => {
+		it( "should be equal to 'Symbol(server)'", ( ) => {
 
 			assert.equal( asea( ).toString( ), "Symbol(server)" );
 
@@ -95,7 +95,7 @@ describe( "asea", ( ) => {
 
 	describe( "`asea( ).toString( )`", ( ) => {
 
-		it( "should return 'Symbol(client)'", ( ) => {
+		it( "should be equal to 'Symbol(client)'", ( ) => {
 
 			assert.equal( asea( ).toString( ), "Symbol(client)" );
 
@@ -119,7 +119,7 @@ describe( "asea", ( ) => {
 
 	describe( "`asea( ).toString( )`", ( ) => {
 
-		it( "should return 'Symbol(client)'", ( ) => {
+		it( "should be equal to 'Symbol(client)'", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => asea( ).toString( ) );
 
