@@ -66,13 +66,10 @@ const asea = require( "./asea.js" );
 
 
 
-//: @!bridge:
-
-
+//: @server:
 describe( "asea", ( ) => {
 
 
-	//: @server:
 	describe( "`asea( ).toString( )`", ( ) => {
 
 		it( "should return 'Symbol(server)'", ( ) => {
@@ -82,15 +79,12 @@ describe( "asea", ( ) => {
 		} );
 
 	} );
-	//: @end-server
-
-
-	
 
 } );
+//: @end-server
 
 
-//: @end-bridge
+
 
 
 

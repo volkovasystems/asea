@@ -84,7 +84,6 @@ describe( "asea", ( ) => {
 
 	} );
 
-
 } );
 //: @end-server
 
@@ -102,7 +101,6 @@ describe( "asea", ( ) => {
 		} );
 
 	} );
-
 
 } );
 //: @end-client
