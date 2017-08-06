@@ -76,7 +76,7 @@ describe( "asea", ( ) => {
 
 	describe( "`asea( ).toString( )`", ( ) => {
 
-		it( "should return 'Symbol(server)'", ( ) => {
+		it( "should be equal to 'Symbol(server)'", ( ) => {
 
 			assert.equal( asea( ).toString( ), "Symbol(server)" );
 
@@ -94,7 +94,7 @@ describe( "asea", ( ) => {
 
 	describe( "`asea( ).toString( )`", ( ) => {
 
-		it( "should return 'Symbol(client)'", ( ) => {
+		it( "should be equal to 'Symbol(client)'", ( ) => {
 
 			assert.equal( asea( ).toString( ), "Symbol(client)" );
 
@@ -108,16 +108,13 @@ describe( "asea", ( ) => {
 
 //: @bridge:
 
-
 describe( "asea", ( ) => {
 
-	let directory = __dirname;
-	let testBridge = path.resolve( directory, "bridge.html" );
-	let bridgeURL = `file://${ testBridge }`;
+	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
 
 	describe( "`asea( ).toString( )`", ( ) => {
 
-		it( "should return 'Symbol(client)'", ( ) => {
+		it( "should be equal to 'Symbol(client)'", ( ) => {
 
 			let result = browser.url( bridgeURL ).execute( ( ) => asea( ).toString( ) );
 
@@ -128,6 +125,5 @@ describe( "asea", ( ) => {
 	} );
 
 } );
-
 
 //: @end-bridge
