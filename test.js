@@ -69,10 +69,9 @@ const asea = require( "./asea.js" );
 //: @server:
 describe( "asea", ( ) => {
 
-
 	describe( "`asea( ).toString( )`", ( ) => {
 
-		it( "should return 'Symbol(server)'", ( ) => {
+		it( "should be equal to 'Symbol(server)'", ( ) => {
 
 			assert.equal( asea( ).toString( ), "Symbol(server)" );
 

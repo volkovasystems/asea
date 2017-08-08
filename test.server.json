@@ -1,32 +1,32 @@
 {
-  "stats": {
-    "suites": 2,
-    "tests": 1,
-    "passes": 1,
-    "pending": 0,
-    "failures": 0,
-    "start": "2017-08-06T21:18:43.186Z",
-    "end": "2017-08-06T21:18:43.194Z",
-    "duration": 8
-  },
-  "tests": [
-    {
-      "title": "should return 'Symbol(server)'",
-      "fullTitle": "asea `asea( ).toString( )` should return 'Symbol(server)'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ],
-  "pending": [],
-  "failures": [],
-  "passes": [
-    {
-      "title": "should return 'Symbol(server)'",
-      "fullTitle": "asea `asea( ).toString( )` should return 'Symbol(server)'",
-      "duration": 0,
-      "currentRetry": 0,
-      "err": {}
-    }
-  ]
+	"stats": {
+		"suites": 2,
+		"tests": 1,
+		"passes": 1,
+		"pending": 0,
+		"failures": 0,
+		"start": "2017-08-08T02:43:46.868Z",
+		"end": "2017-08-08T02:43:46.872Z",
+		"duration": 4
+	},
+	"tests": [
+		{
+			"title": "should be equal to 'Symbol(server)'",
+			"fullTitle": "asea `asea( ).toString( )` should be equal to 'Symbol(server)'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	],
+	"pending": [],
+	"failures": [],
+	"passes": [
+		{
+			"title": "should be equal to 'Symbol(server)'",
+			"fullTitle": "asea `asea( ).toString( )` should be equal to 'Symbol(server)'",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		}
+	]
 }

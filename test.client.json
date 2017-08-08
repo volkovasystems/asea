@@ -4,8 +4,8 @@
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-07-22T13:22:18.368Z",
-	"end": "2017-07-22T13:22:51.043Z",
+	"start": "2017-08-08T02:43:47.993Z",
+	"end": "2017-08-08T02:44:26.257Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,37 +28,37 @@
 		{
 			"name": "asea",
 			"duration": 0,
-			"start": "2017-07-22T13:22:50.767Z",
+			"start": "2017-08-08T02:44:25.900Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "asea",
-			"duration": 96,
-			"start": "2017-07-22T13:22:50.768Z",
-			"end": "2017-07-22T13:22:50.864Z",
+			"duration": 175,
+			"start": "2017-08-08T02:44:25.901Z",
+			"end": "2017-08-08T02:44:26.076Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-07-22T13:22:50.772Z",
-					"end": "2017-07-22T13:22:50.772Z",
+					"start": "2017-08-08T02:44:25.903Z",
+					"end": "2017-08-08T02:44:25.903Z",
 					"duration": 0,
 					"title": "\"before each\" hook",
 					"associatedSuite": "asea",
-					"associatedTest": "should return 'Symbol(client)'"
+					"associatedTest": "should be equal to 'Symbol(client)'"
 				},
 				{
-					"start": "2017-07-22T13:22:50.855Z",
-					"end": "2017-07-22T13:22:50.855Z",
-					"duration": 0,
+					"start": "2017-08-08T02:44:26.075Z",
+					"end": "2017-08-08T02:44:26.076Z",
+					"duration": 1,
 					"title": "\"after each\" hook",
 					"associatedSuite": "asea",
-					"associatedTest": "should return 'Symbol(client)'"
+					"associatedTest": "should be equal to 'Symbol(client)'"
 				},
 				{
-					"start": "2017-07-22T13:22:50.865Z",
-					"end": "2017-07-22T13:22:50.865Z",
-					"duration": 0,
+					"start": "2017-08-08T02:44:26.076Z",
+					"end": "2017-08-08T02:44:26.077Z",
+					"duration": 1,
 					"title": "\"after all\" hook",
 					"associatedSuite": "asea"
 				}
@@ -66,15 +66,15 @@
 		},
 		{
 			"name": "`asea( ).toString( )`",
-			"duration": 88,
-			"start": "2017-07-22T13:22:50.769Z",
-			"end": "2017-07-22T13:22:50.857Z",
+			"duration": 174,
+			"start": "2017-08-08T02:44:25.902Z",
+			"end": "2017-08-08T02:44:26.076Z",
 			"tests": [
 				{
-					"name": "should return 'Symbol(client)'",
-					"start": "2017-07-22T13:22:50.771Z",
-					"end": "2017-07-22T13:22:50.853Z",
-					"duration": 82,
+					"name": "should be equal to 'Symbol(client)'",
+					"start": "2017-08-08T02:44:25.902Z",
+					"end": "2017-08-08T02:44:26.073Z",
+					"duration": 171,
 					"state": "pass"
 				}
 			],
