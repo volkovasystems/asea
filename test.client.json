@@ -1,11 +1,11 @@
 {
 	"state": {
-		"passed": 1,
+		"passed": 4,
 		"failed": 0,
 		"skipped": 0
 	},
-	"start": "2017-08-08T02:43:47.993Z",
-	"end": "2017-08-08T02:44:26.257Z",
+	"start": "2017-08-09T19:56:00.661Z",
+	"end": "2017-08-09T19:56:35.062Z",
 	"capabilities": {
 		"browserName": "chrome",
 		"chromeOptions": {
@@ -28,36 +28,84 @@
 		{
 			"name": "asea",
 			"duration": 0,
-			"start": "2017-08-08T02:44:25.900Z",
+			"start": "2017-08-09T19:56:34.568Z",
 			"tests": [],
 			"hooks": []
 		},
 		{
 			"name": "asea",
-			"duration": 175,
-			"start": "2017-08-08T02:44:25.901Z",
-			"end": "2017-08-08T02:44:26.076Z",
+			"duration": 306,
+			"start": "2017-08-09T19:56:34.568Z",
+			"end": "2017-08-09T19:56:34.874Z",
 			"tests": [],
 			"hooks": [
 				{
-					"start": "2017-08-08T02:44:25.903Z",
-					"end": "2017-08-08T02:44:25.903Z",
-					"duration": 0,
+					"start": "2017-08-09T19:56:34.570Z",
+					"end": "2017-08-09T19:56:34.571Z",
+					"duration": 1,
 					"title": "\"before each\" hook",
 					"associatedSuite": "asea",
 					"associatedTest": "should be equal to 'Symbol(client)'"
 				},
 				{
-					"start": "2017-08-08T02:44:26.075Z",
-					"end": "2017-08-08T02:44:26.076Z",
-					"duration": 1,
+					"start": "2017-08-09T19:56:34.695Z",
+					"end": "2017-08-09T19:56:34.695Z",
+					"duration": 0,
 					"title": "\"after each\" hook",
 					"associatedSuite": "asea",
 					"associatedTest": "should be equal to 'Symbol(client)'"
 				},
 				{
-					"start": "2017-08-08T02:44:26.076Z",
-					"end": "2017-08-08T02:44:26.077Z",
+					"start": "2017-08-09T19:56:34.697Z",
+					"end": "2017-08-09T19:56:34.697Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "asea",
+					"associatedTest": "should be false"
+				},
+				{
+					"start": "2017-08-09T19:56:34.751Z",
+					"end": "2017-08-09T19:56:34.751Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "asea",
+					"associatedTest": "should be false"
+				},
+				{
+					"start": "2017-08-09T19:56:34.751Z",
+					"end": "2017-08-09T19:56:34.751Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "asea",
+					"associatedTest": "should be true"
+				},
+				{
+					"start": "2017-08-09T19:56:34.817Z",
+					"end": "2017-08-09T19:56:34.817Z",
+					"duration": 0,
+					"title": "\"after each\" hook",
+					"associatedSuite": "asea",
+					"associatedTest": "should be true"
+				},
+				{
+					"start": "2017-08-09T19:56:34.818Z",
+					"end": "2017-08-09T19:56:34.818Z",
+					"duration": 0,
+					"title": "\"before each\" hook",
+					"associatedSuite": "asea",
+					"associatedTest": "should be false"
+				},
+				{
+					"start": "2017-08-09T19:56:34.873Z",
+					"end": "2017-08-09T19:56:34.874Z",
+					"duration": 1,
+					"title": "\"after each\" hook",
+					"associatedSuite": "asea",
+					"associatedTest": "should be false"
+				},
+				{
+					"start": "2017-08-09T19:56:34.874Z",
+					"end": "2017-08-09T19:56:34.875Z",
 					"duration": 1,
 					"title": "\"after all\" hook",
 					"associatedSuite": "asea"
@@ -66,15 +114,63 @@
 		},
 		{
 			"name": "`asea( ).toString( )`",
-			"duration": 174,
-			"start": "2017-08-08T02:44:25.902Z",
-			"end": "2017-08-08T02:44:26.076Z",
+			"duration": 127,
+			"start": "2017-08-09T19:56:34.569Z",
+			"end": "2017-08-09T19:56:34.696Z",
 			"tests": [
 				{
 					"name": "should be equal to 'Symbol(client)'",
-					"start": "2017-08-08T02:44:25.902Z",
-					"end": "2017-08-08T02:44:26.073Z",
-					"duration": 171,
+					"start": "2017-08-09T19:56:34.570Z",
+					"end": "2017-08-09T19:56:34.695Z",
+					"duration": 125,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`asea.SERVER`",
+			"duration": 55,
+			"start": "2017-08-09T19:56:34.696Z",
+			"end": "2017-08-09T19:56:34.751Z",
+			"tests": [
+				{
+					"name": "should be false",
+					"start": "2017-08-09T19:56:34.696Z",
+					"end": "2017-08-09T19:56:34.750Z",
+					"duration": 54,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`asea.CLIENT`",
+			"duration": 66,
+			"start": "2017-08-09T19:56:34.751Z",
+			"end": "2017-08-09T19:56:34.817Z",
+			"tests": [
+				{
+					"name": "should be true",
+					"start": "2017-08-09T19:56:34.751Z",
+					"end": "2017-08-09T19:56:34.817Z",
+					"duration": 66,
+					"state": "pass"
+				}
+			],
+			"hooks": []
+		},
+		{
+			"name": "`asea.UNSUPPORTED`",
+			"duration": 56,
+			"start": "2017-08-09T19:56:34.818Z",
+			"end": "2017-08-09T19:56:34.874Z",
+			"tests": [
+				{
+					"name": "should be false",
+					"start": "2017-08-09T19:56:34.818Z",
+					"end": "2017-08-09T19:56:34.873Z",
+					"duration": 55,
 					"state": "pass"
 				}
 			],

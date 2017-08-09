@@ -79,6 +79,36 @@ describe( "asea", ( ) => {
 
 	} );
 
+	describe( "`asea.SERVER`", ( ) => {
+
+		it( "should be true", ( ) => {
+
+			assert.strictEqual( asea.SERVER, true );
+
+		} );
+
+	} );
+
+	describe( "`asea.CLIENT`", ( ) => {
+
+		it( "should be false", ( ) => {
+
+			assert.strictEqual( asea.CLIENT, false );
+
+		} );
+
+	} );
+
+	describe( "`asea.UNSUPPORTED`", ( ) => {
+
+		it( "should be false", ( ) => {
+
+			assert.strictEqual( asea.UNSUPPORTED, false );
+
+		} );
+
+	} );
+
 } );
 //: @end-server
 

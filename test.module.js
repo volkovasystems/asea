@@ -83,6 +83,36 @@ describe( "asea", ( ) => {
 
 	} );
 
+	describe( "`asea.SERVER`", ( ) => {
+
+		it( "should be true", ( ) => {
+
+			assert.strictEqual( asea.SERVER, true );
+
+		} );
+
+	} );
+
+	describe( "`asea.CLIENT`", ( ) => {
+
+		it( "should be false", ( ) => {
+
+			assert.strictEqual( asea.CLIENT, false );
+
+		} );
+
+	} );
+
+	describe( "`asea.UNSUPPORTED`", ( ) => {
+
+		it( "should be false", ( ) => {
+
+			assert.strictEqual( asea.UNSUPPORTED, false );
+
+		} );
+
+	} );
+
 } );
 //: @end-server
 
@@ -100,12 +130,41 @@ describe( "asea", ( ) => {
 
 	} );
 
+	describe( "`asea.SERVER`", ( ) => {
+
+		it( "should be false", ( ) => {
+
+			assert.strictEqual( asea.SERVER, false );
+
+		} );
+
+	} );
+
+	describe( "`asea.CLIENT`", ( ) => {
+
+		it( "should be true", ( ) => {
+
+			assert.strictEqual( asea.CLIENT, true );
+
+		} );
+
+	} );
+
+	describe( "`asea.UNSUPPORTED`", ( ) => {
+
+		it( "should be false", ( ) => {
+
+			assert.strictEqual( asea.UNSUPPORTED, false );
+
+		} );
+
+	} );
+
 } );
 //: @end-client
 
 
 //: @bridge:
-
 describe( "asea", ( ) => {
 
 	let bridgeURL = `file://${ path.resolve( __dirname, "bridge.html" ) }`;
@@ -122,6 +181,41 @@ describe( "asea", ( ) => {
 
 	} );
 
-} );
+	describe( "`asea.SERVER`", ( ) => {
 
+		it( "should be false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => asea.SERVER );
+
+			assert.equal( result.value, false );
+
+		} );
+
+	} );
+
+	describe( "`asea.CLIENT`", ( ) => {
+
+		it( "should be true", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => asea.CLIENT );
+
+			assert.equal( result.value, true );
+
+		} );
+
+	} );
+
+	describe( "`asea.UNSUPPORTED`", ( ) => {
+
+		it( "should be false", ( ) => {
+
+			let result = browser.url( bridgeURL ).execute( ( ) => asea.UNSUPPORTED );
+
+			assert.equal( result.value, false );
+
+		} );
+
+	} );
+
+} );
 //: @end-bridge

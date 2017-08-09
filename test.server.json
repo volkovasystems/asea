@@ -1,18 +1,39 @@
 {
 	"stats": {
-		"suites": 2,
-		"tests": 1,
-		"passes": 1,
+		"suites": 5,
+		"tests": 4,
+		"passes": 4,
 		"pending": 0,
 		"failures": 0,
-		"start": "2017-08-08T02:43:46.868Z",
-		"end": "2017-08-08T02:43:46.872Z",
-		"duration": 4
+		"start": "2017-08-09T19:55:58.333Z",
+		"end": "2017-08-09T19:55:58.342Z",
+		"duration": 9
 	},
 	"tests": [
 		{
 			"title": "should be equal to 'Symbol(server)'",
 			"fullTitle": "asea `asea( ).toString( )` should be equal to 'Symbol(server)'",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be true",
+			"fullTitle": "asea `asea.SERVER` should be true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be false",
+			"fullTitle": "asea `asea.CLIENT` should be false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be false",
+			"fullTitle": "asea `asea.UNSUPPORTED` should be false",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
@@ -24,6 +45,27 @@
 		{
 			"title": "should be equal to 'Symbol(server)'",
 			"fullTitle": "asea `asea( ).toString( )` should be equal to 'Symbol(server)'",
+			"duration": 1,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be true",
+			"fullTitle": "asea `asea.SERVER` should be true",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be false",
+			"fullTitle": "asea `asea.CLIENT` should be false",
+			"duration": 0,
+			"currentRetry": 0,
+			"err": {}
+		},
+		{
+			"title": "should be false",
+			"fullTitle": "asea `asea.UNSUPPORTED` should be false",
 			"duration": 0,
 			"currentRetry": 0,
 			"err": {}
